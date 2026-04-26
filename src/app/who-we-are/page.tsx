@@ -64,7 +64,7 @@ export default function WhoWeArePage() {
             across any domain you point it at.
           </p>
           <p className="mt-8 text-muted-foreground max-w-xl text-lg">
-            MASX AI was built on a simple conviction: forecasting shouldn't
+            MASX AI was built on a simple conviction: forecasting shouldn&apos;t
             require armies of analysts. One agentic engine, running 24/7,
             producing scored predictions that improve with every resolution.
             Geopolitics and Bittensor are the first two verticals. The architecture
