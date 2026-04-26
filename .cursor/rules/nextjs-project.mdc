@@ -1,0 +1,21 @@
+---
+trigger: glob
+globs: **/*.ts, **/*.tsx, **/*.js, **/*.jsx, **/*.css, next.config.ts
+---
+
+# MASX-AI-UI Rules
+
+- Arch: Feature-based folders under `app/`; shared UI in `components/`; data/types/hooks in `lib/`. App Router; Server Components by default; `'use client'` only for interactivity. Path alias `@/*` for all imports.
+- Next.js 16: Read `node_modules/next/dist/docs/` before using any API. Server Actions for mutations. `next/image` and `next/link` always. `loading.tsx` skeletons + `error.tsx` per route.
+
+- Types: Strict mode; no `any`; interfaces for props; shared types in `lib/types.ts`. Zod for runtime validation at data boundaries. Discriminated unions over boolean flags.
+- Components: Functional only; aim <=50 LOC; single responsibility; composition over inheritance. Props: explicit interface, destructured in signature.
+
+- Hooks: `use*` prefix; live in `lib/hooks.ts` or co-located. Exhaustive deps; cleanup in useEffect. `React.memo`/`useMemo`/`useCallback` only for measured bottlenecks.
+- State: `useState` for UI; Context for cross-cutting. Supabase queries only in `lib/` server modules. Server Components fetch at page level; parallel with `Promise.all`.
+
+- Styling: CSS in `app/globals.css` (tokens + utilities) and route-scoped `.css` files. No inline styles. Dark mode default. WCAG AA contrast. Mobile-first responsive.
+- Perf: `next/dynamic` for heavy components (Globe, Recharts). Framer Motion for animations. Code-split via file convention.
+
+- Human-Style: Zero AI trace/chatter; no obvious comments; idiomatic naming (e.g., `props`, `el`, `err`); pragmatic, non-robotic flow.
+- AI: Before edits write 3-5 line plan + component/state impact; changes atomic; no drive-by refactors.
