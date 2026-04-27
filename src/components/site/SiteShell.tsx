@@ -148,7 +148,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://masx-ai-bittensor.vercel.app/"
+                    href="https://bt.masxai.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-signal transition-colors cursor-hover"

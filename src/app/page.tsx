@@ -77,7 +77,7 @@ export default function Home() {
             tag="02 / Decentralized AI"
             title="Bittensor Intelligence"
             blurb="Anomaly detection across 50+ Bittensor subnets: emissions, dTAO liquidity, miner trajectories, validator behavior. Dislocations surface as calibrated forecasts with intervention advisories."
-            href="https://masx-ai-bittensor.vercel.app/"
+            href="https://bt.masxai.com/"
             sceneVariant="network"
           />
         </div>

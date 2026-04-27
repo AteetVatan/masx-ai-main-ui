@@ -51,7 +51,7 @@ export default function OurWorkPage() {
           'Advisory engine with intervention windows and cost-of-inaction analysis',
           'Multi-source data fusion from leading blockchain analytics providers',
         ]}
-        href="https://masx-ai-bittensor.vercel.app/"
+        href="https://bt.masxai.com/"
         sceneVariant="network"
       />
 
